@@ -35,6 +35,9 @@ def academics(request):
 def admissions(request):
     return render(request, 'admissions.html')
 
+def learning(request):
+    return render(request, 'e-learning.html')
+
 def facilities(request):
     facilities = Facility.objects.all()
     context = {'facilities': facilities}
